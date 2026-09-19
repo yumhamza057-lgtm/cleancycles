@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Cycles | Trash Bin Cleaning</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f9fb;color:#111;line-height:1.5}
+header{background:#0b0d0f;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:800;letter-spacing:-.5px}.logo span{color:#c7ff00}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-weight:600}
+.hero{padding:80px 6%;background:#101316;color:white;text-align:center}
+.badge{display:inline-block;background:#c7ff00;color:#111;padding:8px 14px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(42px,8vw,76px);line-height:.98;margin:22px auto;max-width:850px;letter-spacing:-3px}
+.hero p{max-width:650px;margin:0 auto 30px;color:#d7dadd;font-size:18px}
+.btn{display:inline-block;background:#c7ff00;color:#111;padding:15px 24px;border-radius:10px;text-decoration:none;font-weight:800}
+section{padding:65px 6%;max-width:1100px;margin:auto}
+.title{text-align:center;font-size:36px;margin-bottom:12px}.sub{text-align:center;color:#667;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid #e3e7eb;border-radius:18px;padding:28px;box-shadow:0 5px 20px #00000008}
+.price{font-size:38px;font-weight:900;margin:8px 0}.card h3{font-size:20px}.card p{color:#667}
+.pop{border:2px solid #c7ff00}.pop small{font-weight:800;color:#536600}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.step{padding:20px}.num{width:44px;height:44px;border-radius:50%;background:#c7ff00;display:grid;place-items:center;font-weight:900;margin:0 auto 14px}
+.contact{background:#0b0d0f;color:#fff;border-radius:22px;padding:42px;text-align:center}
+.contact p{color:#c9cdd1;margin:10px 0 25px}.cash{font-size:22px;font-weight:800;margin:18px 0}
+footer{text-align:center;padding:28px;color:#777;font-size:14px}
+@media(max-width:750px){nav{display:none}.cards,.steps{grid-template-columns:1fr}.hero{padding:65px 6%}section{padding:50px 6%}.contact{padding:30px 20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">CLEAN <span>CYCLES</span></div>
+  <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#book">Book</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <span class="badge">LOCAL TRASH BIN CLEANING</span>
+  <h1>Fresh bins.<br>Clean cycles.</h1>
+  <p>We clean, sanitize and deodorize your trash bins so they look and smell better.</p>
+  <a class="btn" href="#book">Book a Cleaning</a>
+</section>
+
+<section id="services">
+  <h2 class="title">What We Do</h2>
+  <p class="sub">A simple clean for the bins you use every week.</p>
+  <div class="cards">
+    <div class="card"><h3>🧼 Deep Clean</h3><p>We scrub away grime and buildup from inside your bin.</p></div>
+    <div class="card"><h3>✨ Sanitize</h3><p>We give your bin a thorough cleaning to help keep it fresher.</p></div>
+    <div class="card"><h3>🌿 Deodorize</h3><p>We finish with deodorizing so your bin smells cleaner.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 class="title">Simple Pricing</h2>
+  <p class="sub">No complicated packages. Just choose how many bins you need cleaned.</p>
+  <div class="cards">
+    <div class="card"><h3>1 Bin</h3><div class="price">$15</div><p>One-time cleaning</p></div>
+    <div class="card pop"><small>MOST POPULAR</small><h3>2 Bins</h3><div class="price">$25</div><p>Save $5</p></div>
+    <div class="card"><h3>3 Bins</h3><div class="price">$35</div><p>Save $10</p></div>
+  </div>
+  <p class="sub" style="margin-top:18px">Extra bin: +$10 &nbsp; • &nbsp; Heavy/extra-dirty bin: +$5</p>
+</section>
+
+<section>
+  <h2 class="title">How It Works</h2>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Book</h3><p>Send us a DM on Instagram with your address and number of bins.</p></div>
+    <div class="step"><div class="num">2</div><h3>We Clean</h3><p>We arrive with our cleaning equipment and get your bins cleaned.</p></div>
+    <div class="step"><div class="num">3</div><h3>Pay</h3><p>Pay with cash or Cash App after the cleaning.</p></div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="contact">
+    <h2>Ready for a cleaner bin?</h2>
+    <p>Message us on Instagram to schedule your cleaning.</p>
+    <a class="btn" href="https://instagram.com/cleancyclesbincleaning" target="_blank">DM @cleancyclesbincleaning</a>
+    <div class="cash">Cash App: $AceYunus</div>
+    <p>Cash accepted too.</p>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Clean Cycles • Local Trash Bin Cleaning</footer>
+</body>
+</html>
