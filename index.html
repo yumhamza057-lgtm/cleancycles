@@ -22,7 +22,7 @@ section{padding:65px 6%;max-width:1100px;margin:auto}
 .price{font-size:38px;font-weight:900;margin:8px 0}.card h3{font-size:20px}.card p{color:#667}
 .pop{border:2px solid #c7ff00}.pop small{font-weight:800;color:#536600}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
-.step{padding:20px}.num{width:44px;height:44px;border-radius:50%;background:#c7ff00;display:grid;place-items:center;font-weight:900;margin:0 auto 14px}
+see.step{padding:20px}.num{width:44px;height:44px;border-radius:50%;background:#c7ff00;display:grid;place-items:center;font-weight:900;margin:0 auto 14px}
 .contact{background:#0b0d0f;color:#fff;border-radius:22px;padding:42px;text-align:center}
 .contact p{color:#c9cdd1;margin:10px 0 25px}.cash{font-size:22px;font-weight:800;margin:18px 0}
 footer{text-align:center;padding:28px;color:#777;font-size:14px}
@@ -36,6 +36,7 @@ footer{text-align:center;padding:28px;color:#777;font-size:14px}
 </header>
 
 <main>
+  
 <section class="hero">
   <span class="badge">LOCAL TRASH BIN CLEANING</span>
   <h1>Fresh bins.<br>Clean cycles.</h1>
@@ -75,11 +76,19 @@ footer{text-align:center;padding:28px;color:#777;font-size:14px}
 
 <section id="book">
   <div class="contact">
-    <h2>Ready for a cleaner bin?</h2>
-    <p>Message us on Instagram to schedule your cleaning.</p>
-    <a class="btn" href="https://instagram.com/cleancyclesbincleaning" target="_blank">DM @cleancyclesbincleaning</a>
-    <div class="cash">Cash App: $AceYunus</div>
-    <p>Cash accepted too.</p>
+  <h2>Book a Cleaning</h2>
+  <p>Fill out the form and we'll get back to you.</p>
+
+  <form action="https://formspree.io/f/moevjqzy" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="address" placeholder="Service Address" required>
+    <input type="number" name="bins" placeholder="Number of Bins" min="1" required>
+    <input type="date" name="preferred_date" required>
+    <textarea name="notes" placeholder="Notes (optional)" rows="4"></textarea>
+    <button type="submit" class="btn">Request Cleaning</button>
+  </form>
   </div>
 </section>
 </main>
