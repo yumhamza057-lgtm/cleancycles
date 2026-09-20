@@ -217,8 +217,14 @@ footer {
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
     <input type="text" name="address" placeholder="Service Address" required>
-    <input type="number" name="bins" placeholder="Number of Bins" min="1" required>
-    <input type="date" name="preferred_date" required>
+    <select name="service" id="service" required>
+  <option value="">Select a Service</option>
+  <option value="Trash Bin Cleaning">Trash Bin Cleaning</option>
+  <option value="Vacuum Cleaning">Vacuum Cleaning</option>
+</select>
+  <input type="number" name="bins" id="bins" placeholder="Number of Bins" min="1">
+   <input type="date" name="preferred_date" required>
+   <input type="number" name="rooms" id="rooms" placeholder="Number of Rooms" min="1" style="display:none;">
     <textarea name="notes" placeholder="Notes (optional)" rows="4"></textarea>
     <button type="submit" class="btn">Request Cleaning</button>
   </form>
@@ -228,4 +234,20 @@ footer {
 
 <footer>© 2026 Clean Cycles • Local Trash Bin Cleaning</footer>
 </body>
+
 </html>
+<script>
+const service = document.getElementById("service");
+const bins = document.getElementById("bins");
+const rooms = document.getElementById("rooms");
+
+service.addEventListener("change", function() {
+  if (service.value === "Trash Bin Cleaning") {
+    bins.style.display = "block";
+    rooms.style.display = "none";
+  } else if (service.value === "Vacuum Cleaning") {
+    bins.style.display = "none";
+    rooms.style.display = "block";
+  }
+});
+</script>
